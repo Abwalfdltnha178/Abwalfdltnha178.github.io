@@ -13,10 +13,20 @@
 <link rel="stylesheet" media="only screen and (min-width:1441px) and (max-width:2560px)">
 <meta name="description" content="این سایت یک بلاگ است که بیشتر برای رزومه کاری ساخته شده است." />
 <meta name="keywords" content="ابوالفضل تنها,abwalfdltnha178,گیت+هاب,github" />
-<link rel="icon" href="https://raw.githubusercontent.com/Abwalfdltnha178/-/main/icon%20(1).png" type="image/png" size="2048x2048">
-<link rel="shortcut icon" href="https://raw.githubusercontent.com/Abwalfdltnha178/-/main/icon%20(1).png" type="image/png" size="2048x2048">
+<link rel="icon" href="https://raw.githubusercontent.com/Abwalfdltnha178/-/main/icon%20(1).png" type="image/png" size="2048x2048" media="prefers-color-scheme:light" >
+<link rel="shortcut icon" href="https://raw.githubusercontent.com/Abwalfdltnha178/-/main/icon%20(1).png" type="image/png" size="2048x2048" media="prefers-color-scheme:light" >
+<link rel="icon" href="https://raw.githubusercontent.com/Abwalfdltnha178/-/main/i.png" type="image/png" size="2048x2048" media="prefers-color-scheme:dark">
+<link rel="shortcut icon" href="https://raw.githubusercontent.com/Abwalfdltnha178/-/main/i.png" type="image/png" size="2048x2048" media="prefers-color-scheme:dark">
 <title>ابوالفضل تنها-بلاگ</title>
 </head>
+<svg width="0" height="0" display="none" xmlns="http://w3.org/2000/svg">
+<symbol id="moon"  viewBox="0 0 512 512" fill="none" stroke="currentColor" stroke-width="10">
+<path d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/>
+</symbol>
+<symbol id="sun" viewBox="0 0 512 512" fill="none" stroke="currentColor" stroke-width="10">
+<path d="M120.2 154.2c4.672 4.688 10.83 7.031 16.97 7.031S149.5 158.9 154.2 154.2c9.375-9.375 9.375-24.56 0-33.93L108.9 74.97c-9.344-9.375-24.56-9.375-33.94 0s-9.375 24.56 0 33.94L120.2 154.2zM256 112c13.25 0 24-10.75 24-24v-64C280 10.75 269.3 0 256 0S232 10.75 232 24v64C232 101.3 242.8 112 256 112zM112 256c0-13.25-10.75-24-24-24h-64C10.75 232 0 242.8 0 256s10.75 24 24 24h64C101.3 280 112 269.3 112 256zM374.8 161.2c6.141 0 12.3-2.344 16.97-7.031l45.25-45.28c9.375-9.375 9.375-24.56 0-33.94s-24.59-9.375-33.94 0l-45.25 45.28c-9.375 9.375-9.375 24.56 0 33.93C362.5 158.9 368.7 161.2 374.8 161.2zM256 400c-13.25 0-24 10.75-24 24v64C232 501.3 242.8 512 256 512s24-10.75 24-24v-64C280 410.8 269.3 400 256 400zM120.2 357.8l-45.25 45.28c-9.375 9.375-9.375 24.56 0 33.94c4.688 4.688 10.83 7.031 16.97 7.031s12.3-2.344 16.97-7.031l45.25-45.28c9.375-9.375 9.375-24.56 0-33.93S129.6 348.4 120.2 357.8zM488 232h-64c-13.25 0-24 10.75-24 24s10.75 24 24 24h64C501.3 280 512 269.3 512 256S501.3 232 488 232zM391.8 357.8c-9.344-9.375-24.56-9.372-33.94 .0031s-9.375 24.56 0 33.93l45.25 45.28c4.672 4.688 10.83 7.031 16.97 7.031s12.28-2.344 16.97-7.031c9.375-9.375 9.375-24.56 0-33.94L391.8 357.8zM256 144C194.1 144 144 194.1 144 256c0 61.86 50.14 112 112 112s112-50.14 112-112C368 194.1 317.9 144 256 144z"/>
+</symbol>
+</svg>
 <style type="text/css">
 *{padding:0;
 margin:0;
@@ -26,7 +36,9 @@ transition:0.5s;
 -o-transition:0.5s;
 -ms-transition:0.5s;}
 html,body{width:100%;height:100%;}
-header{width:100%;height:50px;}
+:root{scroll-behavior:smooth;}
+header{width:100%;
+height:50px;}
 header svg {height:50px;}
 header a{text-decoration:none;}
 nav{width:200px;
@@ -36,7 +48,7 @@ position:fixed;
 z-index:5;
 left:-100%;
 top:0;
-background:#ffffff;}
+background:white;}
 nav  a{color:black;text-decoration:none;}
 nav a:hover{color:white;}
 ul {list-style:none;background:;}
@@ -46,7 +58,7 @@ height:5px;
 display:block;
 background:black;
 position:absolute;
-z-index:4;
+z-index:5;
 content:"";}
 span:before{
 width:35px;
@@ -86,14 +98,61 @@ z-index:3;
 right:-100%;}
 .opn{left:0;}
 .bg-o{right:0;}
+.Dark {width:50px;
+height:50px;
+position:fixed;
+z-index:2;
+bottom:0;
+right:0;
+background:none;
+border:0;}
+.icon{width:50px;
+height:50px;
+display:inline-block;
+stroke:currentColor;
+backdrop-filter:blur(1px);
+border-radius:50%;
+}
+.sun{display:none;}
+.dark-mode .sun{display:inline-block;}
+.dark-mode .moon {display:none;}
+#scroll {width:50px;
+height:50px;
+z-index:2;
+position:fixed;
+bottom:0;
+left:-50px;}
+#scroll.show{left:0;}
+.dark-mode {background:black;color:#ffffffcc;}
+.dark-mode header svg{fill:white;}
+.dark-mode nav {background:black;}
+.dark-mode nav a{color:white;}
+.dark-mode nav a:hover {color:black;}
+.dark-mode ul:hover {color:black;background:white;}
+.dark-mode span{background:white;}
+.dark-mode span:before{background:white;}
+.dark-mode span:after{background:white;}
+#sun{display:block;color:white;}
 </style>
 <script type="text/javascript">
 function opn(){
 document.getElementsByTagName("nav")[0].classList.toggle("opn");
 document.getElementById("bg-menu").classList.toggle("bg-o");
 }
+function Dark(state){
+document.documentElement.classList.toggle("dark-mode",state)}
+isDarkmode = window.matchMedia("(prefers-color-scheme:dark)");
+Dark(isDarkmode.matches);
+isDarkmode.addListener((evt)=>Dark(evt.matches));
+function ScrollTop(){
+var Btn = document.getElementById("scroll");
+if(window.pageYOffset>200){
+Btn.classList.add("show")
+}else{
+Btn.classList.remove("show")
+}}
 </script>
-<body>
+<body onscroll="ScrollTop()">
 <header>
 <a href="http://abwalfdltnha178.github.io" >
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path d="M6 5c6-5 68 0 88 83Q61 56 47.5 49Q58 69 86 94Q0 65 6 5z"/></svg>
@@ -109,9 +168,21 @@ document.getElementById("bg-menu").classList.toggle("bg-o");
 </ul>
 </nav>
 </header>
+<button onclick="Dark()" class="Dark" >
+	<svg class="icon moon" >
+		<use href="#moon" class="moon"  ></use>
+	</svg>
+	<svg class="icon sun" >
+		<use href="#sun" class="sun"  ></use>
+	</svg>
+	</button>
+<a href="#" ><button id="scroll" >برو بالا</button></a>
 <main>
 در حال ساخت...<br>
 این سایت یک بلاگ است که بیشتر برای رزومه کاری ساخته شده است.
+اگر میخواهید در بهبود و ارتقای آن مشارکت داشته باشد و به ما کمک کنید،می توانید
+به مخزن <a href="http://abwalfdltnha178.github.io" >گیت هاب</a> که مربوط به
+این وبسایت است رفته و از آن جا پیشنهادهایتان را برای اصلاح و ویرایش ارسال کنید.
 </main>
 <footer></footer>
 </body>
